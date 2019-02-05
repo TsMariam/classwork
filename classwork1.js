@@ -206,31 +206,4 @@ if (x < 10) {
 }
 
 
-// 11.(***) Enter a number.Find the difference between its biggest and smallest digits.
-
-let x = 4593653;
-let max, min, temp;
-
-if (x < 10) {
-    console.log(0);
-} else {
-    max = x % 10;
-    min = x % 10;
-    x = (x - x % 10) / 10;
-    console.log(x)
-
-    while (x != 0) {
-        temp = x % 10;
-        if (temp > max) {
-            max = temp;
-        }
-        if (temp < min) {
-            min = temp;
-        }
-        x = (x - x % 10) / 10;
-    }
-    console.log(max - min);
-}
-
-
 
